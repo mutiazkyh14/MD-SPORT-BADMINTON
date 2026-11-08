@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: ui-serif, georgia, cambria, "times new roman", times, serif;
+    background-color: lch(94.2% 1.73 236.22);
+    color: black;
+}
+
+/* KOREKSI 1: Padding dikecilkan agar tinggi navigasi normal */
+#satu {
+    background-color: lch(97.53% 0.62 256.21);
+    padding: 20px; 
+    text-align: center;
+}
+
+.dua {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #22bd81;
+    border-radius: 100px;
+}
+
+.dua li {
+    display: inline-block;
+    position: relative;
+}
+
+.dua li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.dua li a:hover {
+    background-color: #d11326;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #22bd81;
+    min-width: 160px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    z-index: 99; /* Memastikan dropdown tidak tertutup elemen bawahnya */
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.dropdown-container:hover .dropdown {
+    display: block;
+}
+
+.text {
+    background-color: #d16526;
+    padding: 10px;
+    font-weight: bold;
+    outline: 2px dashed #d16526;
+}
+
+#tiga {
+    background-color: #1F2326;
+    background-image: url('images/md.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 2px solid #d16526;
+}
+
+#tiga h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* KOREKSI 2: Hapus inline-block agar container bisa ke tengah */
+#main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px; 
+}
+
+/* KOREKSI 3: Kiri dan Kanan dijadikan inline-block agar bersebelahan */
+#left, #right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#left {
+    width: 65%; 
+    margin-right: 2%;  
+}
+
+#right {
+    width: 32%; 
+}
+
+.enam, .delapan {
+    background-color: #22bd81; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #d16526; 
+}
+
+.btn {
+    color: black; 
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;  
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #d16526;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #d16526;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
